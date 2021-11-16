@@ -130,6 +130,7 @@ instance Flat a => Flat (Semigroup.Last a) where
     size (Semigroup.Last a) = size a
     decode = Semigroup.Last <$> decode
 
+#endif
 {- |
 `()`, as all data types with a single constructor, has a zero-length encoding.
 
